@@ -6,10 +6,10 @@
 * Configure the application:
   * Duplicate the configuration file `_env` and rename it as `.env`
   * Edit the file `.env` to set MONGODB_URI to your mongoDB deployment.
-* Start the server. Run `npm run start`
 * Add dummy data (customers) 
   * Run `mongoimport -d <database name> --drop --jsonArray <mongodb uri> ./sample_data/customers.json` 
   * Example: `mongoimport -d crm_mvp --drop --jsonArray mongodb://localhost:27017 ./sample_data/customers.json`
+* Start the server. Run `npm run start`
 
 **`.env` file variable description:** 
 
