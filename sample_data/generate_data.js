@@ -77,8 +77,7 @@ function getID(i){
   while (id_num.length < num_length) {
     id_num = "0" + id_num
   }
-  return "c"+id_num
-  // ID should be Hexadecimal
+  return "CUS"+id_num
 }
 
 function getEmail(i, name){
@@ -87,9 +86,10 @@ function getEmail(i, name){
 
 var customers = []
 
-for (let i = 0; i <= total_customers; i++) {
+for (let i = 0; i < total_customers; i++) {
     customer = {"__v": 0}
-    customer['_id'] = {"$oid": getID(i)}
+    customer['_id'] = getID(i)
+    // If ID to be used as object ID (which is autogenrated from mongoDB)
     customer['status'] = statuses[i % statuses.length]
     customer['name'] = names[i % names.length]
     customer['address'] = addreses[i % addreses.length]
