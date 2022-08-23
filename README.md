@@ -1,3 +1,5 @@
+This app is hosted at This app is hosted at [http://13.215.83.42/ 🚀](http://13.215.83.42/)   
+
 ## To Do
 * Handle CORS
 * Setup linter
