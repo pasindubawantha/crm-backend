@@ -88,7 +88,7 @@ var customers = []
 
 for (let i = 0; i < total_customers; i++) {
     customer = {"__v": 0}
-    customer['_id'] = getID(i)
+    // customer['_id'] = getID(i)
     // If ID to be used as object ID (which is autogenrated from mongoDB)
     customer['status'] = statuses[i % statuses.length]
     customer['name'] = names[i % names.length]
