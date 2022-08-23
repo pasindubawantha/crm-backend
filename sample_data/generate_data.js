@@ -77,7 +77,8 @@ function getID(i){
   while (id_num.length < num_length) {
     id_num = "0" + id_num
   }
-  return "CUS"+id_num
+  return "c"+id_num
+  // ID should be Hexadecimal
 }
 
 function getEmail(i, name){
