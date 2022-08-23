@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "babel-node src/index.js",
-    "start": "babel-node src/index.js"
+    "start": "babel-node src/index.js",
+    "generate_data": "node ./sample_data/generate_data.js"
   },
   "author": "",
   "license": "ISC",
